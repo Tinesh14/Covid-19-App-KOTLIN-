@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.corona_app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_world" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.corona_app.ui.country.CountryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_country" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.corona_app.ui.provinces.ProvincesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_provinces" />
+
+    <fragment
+        android:id="@+id/nav_cases"
+        android:name="com.example.corona_app.ui.virus.CasesFragment"
+        tools:layout="@layout/fragment_cases"
+        android:label="@string/covid_19_cases_in_indonesia"/>
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.corona_app.ui.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news"/>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.corona_app.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+</navigation>

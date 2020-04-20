@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/planet_earth"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/flags"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/australia"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_cases"
+            android:icon="@drawable/virus_case"
+            android:title="@string/covid_19_cases_in_indonesia"/>
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_news"
+                android:icon="@drawable/newspaper"
+                android:title="@string/news"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/businessman_talking_about_data_analysis"
+                android:title="@string/menu_share" />
+        </menu>
+    </item>
+
+</menu>
